@@ -75,3 +75,25 @@ node server/test-e2e.js
 5. **`habitup_progreso_y_estad_sticas`:** Analítica avanzada con sparkline SVG, tarjeta de AI Coach, gráfico de barras diario, diagrama donut de 5 pilares y matriz de 30 días.
 6. **`habitup_logros_y_recompensas`:** Hero banner de temporada con barra de progreso brillante, bóveda de gemas, catálogo de logros y showcase del último trofeo desbloqueado.
 7. **`habitup_perfil_y_configuraci_n`:** Avatar con badge de nivel, métricas rápidas, switches de notificaciones, sonido háptico, selector de tema claro y tabla clasificatoria de Liga Diamante.
+
+---
+
+## 🌐 Despliegue en Render
+
+El proyecto está 100% preparado para ser desplegado en [Render](https://render.com) en menos de 2 minutos:
+
+1. **Subir los cambios a GitHub:**
+   ```bash
+   git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+   git push -u origin main
+   ```
+2. **Crear el Web Service en Render:**
+   - Opción A (**Blueprint automático**): Ve a **Blueprints** en el dashboard de Render, conecta tu repositorio y Render leerá automáticamente el archivo `render.yaml`.
+   - Opción B (**Web Service manual**):
+     - **Build Command:** `npm run build`
+     - **Start Command:** `npm start`
+     - **Variables de Entorno:**
+       - `NODE_ENV`: `production`
+       - `DATABASE_URL`: `postgresql://habitup_db_user:oOeHgS5zHmswCDm2thsdrRANeP5qjycJ@dpg-dbgd6j8u01pc738liep0-a.virginia-postgres.render.com/habitup_db`
+       - `JWT_SECRET`: una clave secreta para firmar los tokens JWT.
+

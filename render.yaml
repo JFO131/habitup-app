@@ -3,11 +3,13 @@ services:
     name: habitup-app
     env: node
     plan: free
-    region: oregon
+    region: virginia
     buildCommand: npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
+      - key: DATABASE_URL
+        value: postgresql://habitup_db_user:oOeHgS5zHmswCDm2thsdrRANeP5qjycJ@dpg-dbgd6j8u01pc738liep0-a.virginia-postgres.render.com/habitup_db
       - key: JWT_SECRET
         generateValue: true
