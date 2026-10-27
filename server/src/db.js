@@ -12,16 +12,20 @@ const __dirname = path.dirname(__filename);
 dotenv.config();
 dotenv.config({ path: path.join(__dirname, '..', '.env') });
 
+const DEFAULT_DATABASE_URL = 'postgresql://habitup_db_user:oOeHgS5zHmswCDm2thsdrRANeP5qjycJ@dpg-dbgd6j8u01pc738liep0-a.virginia-postgres.render.com/habitup_db';
+
 let dbClient = null;
 
 export async function getDb() {
   if (dbClient) return dbClient;
 
-  if (process.env.DATABASE_URL) {
-    console.log('Conectando a base de datos PostgreSQL remota...');
-    const isLocal = process.env.DATABASE_URL.includes('localhost') || process.env.DATABASE_URL.includes('127.0.0.1');
+  const targetUrl = process.env.DATABASE_URL || DEFAULT_DATABASE_URL;
+
+  if (targetUrl) {
+    console.log('Conectando a base de datos PostgreSQL en Render...');
+    const isLocal = targetUrl.includes('localhost') || targetUrl.includes('127.0.0.1');
     const pool = new pg.Pool({ 
-      connectionString: process.env.DATABASE_URL,
+      connectionString: targetUrl,
       ssl: isLocal ? false : { rejectUnauthorized: false },
       max: 5,
       idleTimeoutMillis: 30000,
