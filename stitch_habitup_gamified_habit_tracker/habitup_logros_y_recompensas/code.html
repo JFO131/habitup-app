@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#474555","on-error":"#ffffff","tertiary":"#653f00","outline-variant":"#c8c4d8","surface-dim":"#d2d9f4","on-secondary-fixed-variant":"#004881","primary-container":"#5843e0","surface-bright":"#faf8ff","on-secondary-fixed":"#001c38","secondary-fixed-dim":"#a2c9ff","on-tertiary-container":"#ffd29d","secondary":"#0060a9","surface-container-high":"#e2e7ff","background":"#faf8ff","primary-fixed":"#e4dfff","surface-variant":"#dae2fd","tertiary-fixed":"#ffddb7","tertiary-fixed-dim":"#ffb95d","surface-tint":"#5742df","surface-container-low":"#f2f3ff","error-container":"#ffdad6","surface":"#faf8ff","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c6bfff","on-primary-container":"#dbd5ff","on-secondary-container":"#00345f","on-background":"#131b2e","error":"#ba1a1a","on-error-container":"#93000a","on-secondary":"#ffffff","on-primary":"#ffffff","inverse-on-surface":"#eef0ff","surface-container-highest":"#dae2fd","outline":"#787587","inverse-primary":"#c6bfff","inverse-surface":"#283044","on-primary-fixed":"#160066","on-surface":"#131b2e","secondary-container":"#3f9eff","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","secondary-fixed":"#d3e4ff","on-primary-fixed-variant":"#3e21c7","tertiary-container":"#865400","surface-container":"#eaedff","primary":"#3f22c8","on-tertiary-fixed":"#2a1700"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem",margin:"2rem",gutter:"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"stat-numeric":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"stat-numeric":["28px",{lineHeight:"32px",letterSpacing:"-0.03em",fontWeight:"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><img alt="HabitUp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XXj8cTqVWnNtxqT4jcWukCWgCWPuTlTnHE0D32zVdJgNYPfFwhWWKYYnbIWlROUNtDwZCBcBJiD-w3FzMBb-AmzX3xx5D9qA8vrXynqZtLzyGZzBDDIb2p9w_BV6ogRqW4eJ3spTilyFSaC2lCHFdy8XKWTapzQAT5EL7Ur_fHR0Hc6NOBtv7Ro0CzffedFOEI9pEFOOlQmGrWvWemJ8-9PG1nNQ8bj5yKWlsRN4R5PrBKYPE65iSsSrKI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight">HabitUp</span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Evolución Diaria</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-bold shadow-md shadow-primary-container/20"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="inicio" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">dashboard</span><span class="font-label-lg text-label-lg">Inicio</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="mis-habitos" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">check_circle</span><span class="font-label-lg text-label-lg">Mis Hábitos</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="progreso" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">monitoring</span><span class="font-label-lg text-label-lg">Progreso</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="logros" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">military_tech</span><span class="font-label-lg text-label-lg">Logros</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="perfil" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">manage_accounts</span><span class="font-label-lg text-label-lg">Perfil</span></a></nav></div><div class="flex flex-col gap-3 p-4 bg-surface-container-low rounded-xl"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary"><span class="material-symbols-outlined text-sm font-bold">local_fire_department</span><span class="font-label-sm text-label-sm font-bold">14 DÍAS</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Nivel 7</span></div><div class="flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-bold">Habit Master</span><span class="font-label-sm text-label-sm text-on-surface-variant">86%</span></div><div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden"><div class="h-full rounded-full bg-primary-container" style="width: 86.25%"></div></div><div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mt-0.5"><span>3,450 XP</span><span>4,000 XP</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4"><div class="flex items-center text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"><span class="text-on-surface-variant">HabitUp</span><span class="material-symbols-outlined text-sm mx-1">chevron_right</span><span class="text-primary font-bold">Panel Activo</span></div></div><div class="flex items-center gap-4"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-64 h-9 pl-9 pr-3 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Buscar hábitos, tags, metas..." type="text"/></div><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-95 active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-lg">add</span><span class="hidden md:inline">Nuevo Hábito</span></button><div class="flex items-center gap-2 pl-2"><div class="relative flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUOkeg1TR9-Gw7kAsCQfohpEDWJCT2lDE7OL-2Uk-QNF8T-ZaHIe7hg8RlTW0lx9AQiSv9jCNOvnqCMbqHWBf83HyNEmC01Pb5N5wtxwMoscYp7cPh6SH4TpxtVL6ulrhvo1nTWIwLnvOTauV0JqA8NZsZcALmrd4muLHzexOobEzA3ZzPM4fhUbSNsgfihC3wG75jjvgEfC_RUl5ny6YWr_Kv_FisfxtLK58h3On3Pfpz0r5ek96kBw"/><span class="absolute -bottom-1 -right-1 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] leading-tight font-extrabold">7</span></div></div></div></header><main class="w-full pt-16 px-8 min-h-screen bg-background"><div class="flex flex-col w-full pb-16">
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'logros') {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-md');
+        } else {
+          link.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold', 'shadow-md');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    });
+  </script>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pt-4">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider">Temporada 2 • Ascenso</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary-container" style="font-variation-settings: 'FILL' 1;">stars</span>
+          Temporada activa
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Logros, Niveles y Recompensas</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Convierte tu disciplina diaria en poder desbloqueable, coleccionables e insignias de maestría.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="relative group flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-md hover:shadow-lg transition-all duration-300 active:scale-95" type="button">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Canjear</span>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight font-extrabold">Tienda de Avatares</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-primary-container to-secondary text-on-primary shadow-xl p-6 md:p-8 mb-10">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-64 h-64 rounded-full bg-tertiary-fixed/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-2xl flex-1">
+<div class="flex flex-wrap items-center gap-3">
+<div class="px-3 py-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-primary flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-sm text-label-sm font-extrabold uppercase tracking-wider">Rango Maestro</span>
+</div>
+<span class="text-on-primary-container font-label-md text-label-md">ID Aventurero: #HU-9842</span>
+</div>
+<div>
+<div class="flex items-baseline gap-3">
+<h2 class="font-display-hero text-display-hero text-on-primary font-black tracking-tight leading-none">Nivel 7</h2>
+<span class="font-headline-md text-headline-md text-on-primary-container font-bold">— Explorador Imparable</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary/80 mt-1">A solo 550 XP de desbloquear el prestigioso título <strong class="text-on-primary font-semibold">Nivel 8: Maestro de la Constancia</strong>.</p>
+</div>
+<div class="flex flex-col gap-2 mt-2">
+<div class="flex items-center justify-between text-on-primary font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-bold">3,450 XP Actuales</span>
+</div>
+<span class="text-on-primary-container">Objetivo: 4,000 XP (86.2%)</span>
+</div>
+<div class="relative w-full h-4 rounded-full bg-on-primary/20 overflow-hidden shadow-inner p-0.5">
+<div class="relative h-full rounded-full bg-gradient-to-r from-secondary-container via-surface-bright to-tertiary-fixed shadow-md transition-all duration-1000 ease-out" style="width: 86.25%">
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-surface-container-lowest/60 to-transparent animate-pulse"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-primary/70 font-label-sm text-label-sm mt-0.5">
+<span>Nivel 7 (3,000 XP)</span>
+<span class="font-bold text-on-primary">Faltan 550 XP</span>
+<span>Nivel 8 (4,000 XP)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-3 min-w-[280px]">
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-lowest/15 backdrop-blur-md text-on-primary shadow-sm hover:bg-surface-container-lowest/20 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/20 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary/75 uppercase tracking-wide">Saldo de Recompensas</span>
+<span class="font-stat-numeric text-stat-numeric text-on-primary font-black leading-none mt-0.5">240</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold">Gemas</span>
+</div>
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-lowest/15 backdrop-blur-md text-on-primary shadow-sm hover:bg-surface-container-lowest/20 transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-error-container/20 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-2xl text-tertiary-fixed animate-bounce" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary/75 uppercase tracking-wide">Fuego de Racha Global</span>
+<span class="font-stat-numeric text-stat-numeric text-on-primary font-black leading-none mt-0.5">14 Días</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest/30 text-on-primary font-bold">x1.5 Multi</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-highest/20 backdrop-blur-sm flex items-start gap-2.5">
+<span class="material-symbols-outlined text-base text-tertiary-fixed mt-0.5" style="font-variation-settings: 'FILL' 1;">card_giftcard</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary font-bold">Próxima recompensa (Nivel 8):</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Tema 'Cosmos Oscuro' + 100 Gemas adicionales</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm whitespace-nowrap transition-transform active:scale-95" type="button">
+            Todas (18/40)
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold whitespace-nowrap transition-colors" type="button">
+            Desbloqueadas (18)
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold whitespace-nowrap transition-colors" type="button">
+            En Progreso (8)
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold whitespace-nowrap transition-colors" type="button">
+            Bloqueadas (14)
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold whitespace-nowrap transition-colors" type="button">
+            Secretas (3)
+          </button>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto text-on-surface-variant font-label-sm text-label-sm">
+<span>Ordenar:</span>
+<span class="font-bold text-on-surface cursor-pointer flex items-center">Recientes <span class="material-symbols-outlined text-sm">expand_more</span></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="group relative rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary-fixed/20 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="flex items-start gap-4">
+<div class="relative w-14 h-14 rounded-2xl bg-gradient-to-br from-tertiary-fixed via-tertiary-fixed-dim to-tertiary flex items-center justify-center text-on-tertiary shadow-md shrink-0">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">wb_twilight</span>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-md bg-tertiary text-on-tertiary font-label-sm text-[10px] font-black">NIV 3</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Guerrero Matutino</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-[11px] font-bold shrink-0">+100 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Completar hábitos antes de las 9:00 AM durante 7 días seguidos.</p>
+<div class="flex items-center justify-between mt-4 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Desbloqueado hace 2 días</span>
+</div>
+<span class="text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">stars</span>
+                  Completada
+                </span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary-fixed/30 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="flex items-start gap-4">
+<div class="relative w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary-container via-secondary to-on-secondary-container flex items-center justify-center text-on-secondary shadow-md shrink-0">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-md bg-secondary text-on-secondary font-label-sm text-[10px] font-black">20D</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Amo de la Hidratación</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary font-label-sm text-[11px] font-bold shrink-0">+75 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">20 días alcanzando el consumo de al menos 2 litros de agua.</p>
+<div class="flex items-center justify-between mt-4 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Desbloqueado el 12 May</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">stars</span>
+                  Completada
+                </span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-fixed/30 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="flex items-start gap-4">
+<div class="relative w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-container via-surface-tint to-primary flex items-center justify-center text-on-primary shadow-md shrink-0">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-md bg-primary text-on-primary font-label-sm text-[10px] font-black">10D</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Mente Serena</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-[11px] font-bold shrink-0">+90 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">10 sesiones de meditación o respiración consciente consecutivas.</p>
+<div class="flex items-center justify-between mt-4 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Desbloqueado el 10 May</span>
+</div>
+<span class="text-primary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">stars</span>
+                  Completada
+                </span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary-fixed-dim/20 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div class="flex items-start gap-4">
+<div class="relative w-14 h-14 rounded-2xl bg-gradient-to-br from-tertiary via-tertiary-container to-on-tertiary-fixed flex items-center justify-center text-on-tertiary shadow-md shrink-0">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-black">14D</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Racha de Titanio</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-[11px] font-bold shrink-0">+150 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Mantener 14 días seguidos cualquier hábito de tu rutina activa.</p>
+<div class="flex items-center justify-between mt-4 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2.5">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>¡Desbloqueado Hoy!</span>
+</div>
+<span class="text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">stars</span>
+                  Completada
+                </span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+<div class="flex items-start gap-4">
+<div class="relative w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-3xl">auto_stories</span>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-md bg-primary-container text-on-primary font-label-sm text-[10px] font-black">64%</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Lector Voraz</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-bold shrink-0">+120 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Leer un total de 500 páginas registradas en tus hábitos.</p>
+<div class="mt-3">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mb-1.5">
+<span class="font-bold text-on-surface">320 / 500 págs</span>
+<span>Faltan 180 págs</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-primary-container transition-all duration-500" style="width: 64%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+<div class="flex items-start gap-4">
+<div class="relative w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-3xl">alarm_on</span>
+<div class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-md bg-secondary text-on-secondary font-label-sm text-[10px] font-black">7/10</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Madrugador Épico</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-bold shrink-0">+80 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Despertar a las 6:30 AM durante 10 días registrados.</p>
+<div class="mt-3">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mb-1.5">
+<span class="font-bold text-on-surface">7 / 10 días completados</span>
+<span>Faltan 3 días</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-secondary-container transition-all duration-500" style="width: 70%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-2xl bg-surface-container-low/70 p-5 overflow-hidden">
+<div class="flex items-start gap-4 opacity-75">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-3xl">lock</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Hábito Centenario</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-[11px] font-bold shrink-0">+500 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Mantener una racha ininterrumpida de 100 días consecutivos.</p>
+<div class="flex items-center gap-1.5 mt-3 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">lock_clock</span>
+<span>Progresión actual: 14/100 días</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-2xl bg-surface-container-low/70 p-5 overflow-hidden">
+<div class="flex items-start gap-4 opacity-75">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold truncate">Polímata</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-outline font-label-sm text-[11px] font-bold shrink-0">+250 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Completar hábitos en 5 categorías distintas en un único día solar.</p>
+<div class="flex items-center gap-1.5 mt-3 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">lock_clock</span>
+<span>Máximo registrado: 3/5 categorías</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-6 shadow-md">
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-tertiary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary-fixed/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-extrabold uppercase tracking-wider mb-5 animate-pulse">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">celebration</span>
+<span>¡Último Logro Desbloqueado!</span>
+</div>
+<div class="relative mb-5">
+<div class="absolute inset-0 bg-tertiary-fixed blur-xl opacity-60 rounded-full scale-125"></div>
+<div class="relative w-28 h-28 rounded-3xl bg-gradient-to-tr from-tertiary via-tertiary-fixed to-tertiary-container flex items-center justify-center text-on-tertiary shadow-xl ring-4 ring-tertiary-fixed/30">
+<span class="material-symbols-outlined text-6xl drop-shadow-md" style="font-variation-settings: 'FILL' 1;">wb_twilight</span>
+</div>
+<div class="absolute -bottom-2 -right-2 w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-stat-numeric text-stat-numeric shadow-md text-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-black tracking-tight">Guerrero Matutino</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 px-2">
+            ¡Constancia legendaria! Despertaste temprano y completaste tu ritual matutino 7 días sin fallar.
+          </p>
+<div class="w-full mt-5 p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg font-bold" style="font-variation-settings: 'FILL' 1;">add</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Recompensa</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">+100 XP Acreditados</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-extrabold">+15 Gemas</span>
+</div>
+<div class="w-full flex flex-col gap-2.5 mt-5">
+<button class="w-full py-3 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary/95 transition-all flex items-center justify-center gap-2 active:scale-98" type="button">
+<span class="material-symbols-outlined text-lg">share</span>
+              Compartir Logro con Amigos
+            </button>
+<button class="w-full py-2.5 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold transition-colors" type="button">
+              Ver Historial de Recompensas
+            </button>
+</div>
+</div>
+</div>
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Estadísticas de Trofeos</h4>
+<span class="material-symbols-outlined text-on-surface-variant text-xl">insights</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Efectividad</span>
+<span class="font-stat-numeric text-stat-numeric text-on-surface font-black">45%</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">18 de 40 totales</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">XP Obtenida</span>
+<span class="font-stat-numeric text-stat-numeric text-primary font-black">+2.4k</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Vía insignias</span>
+</div>
+</div>
+<div class="pt-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-2">
+<span>Progreso hacia Nivel 8</span>
+<span class="font-bold text-on-surface">3,450 / 4,000 XP</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary to-secondary-container" style="width: 86.25%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

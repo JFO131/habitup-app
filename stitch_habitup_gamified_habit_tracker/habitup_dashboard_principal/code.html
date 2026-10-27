@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-surface-variant":"#474555","on-error":"#ffffff","tertiary":"#653f00","outline-variant":"#c8c4d8","surface-dim":"#d2d9f4","on-secondary-fixed-variant":"#004881","primary-container":"#5843e0","surface-bright":"#faf8ff","on-secondary-fixed":"#001c38","secondary-fixed-dim":"#a2c9ff","on-tertiary-container":"#ffd29d","secondary":"#0060a9","surface-container-high":"#e2e7ff","background":"#faf8ff","primary-fixed":"#e4dfff","surface-variant":"#dae2fd","tertiary-fixed":"#ffddb7","tertiary-fixed-dim":"#ffb95d","surface-tint":"#5742df","surface-container-low":"#f2f3ff","error-container":"#ffdad6","surface":"#faf8ff","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c6bfff","on-primary-container":"#dbd5ff","on-secondary-container":"#00345f","on-background":"#131b2e","error":"#ba1a1a","on-error-container":"#93000a","on-secondary":"#ffffff","on-primary":"#ffffff","inverse-on-surface":"#eef0ff","surface-container-highest":"#dae2fd","outline":"#787587","inverse-primary":"#c6bfff","inverse-surface":"#283044","on-primary-fixed":"#160066","on-surface":"#131b2e","secondary-container":"#3f9eff","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","secondary-fixed":"#d3e4ff","on-primary-fixed-variant":"#3e21c7","tertiary-container":"#865400","surface-container":"#eaedff","primary":"#3f22c8","on-tertiary-fixed":"#2a1700"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem",margin:"2rem",gutter:"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"stat-numeric":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"stat-numeric":["28px",{lineHeight:"32px",letterSpacing:"-0.03em",fontWeight:"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><img alt="HabitUp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XXj8cTqVWnNtxqT4jcWukCWgCWPuTlTnHE0D32zVdJgNYPfFwhWWKYYnbIWlROUNtDwZCBcBJiD-w3FzMBb-AmzX3xx5D9qA8vrXynqZtLzyGZzBDDIb2p9w_BV6ogRqW4eJ3spTilyFSaC2lCHFdy8XKWTapzQAT5EL7Ur_fHR0Hc6NOBtv7Ro0CzffedFOEI9pEFOOlQmGrWvWemJ8-9PG1nNQ8bj5yKWlsRN4R5PrBKYPE65iSsSrKI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight">HabitUp</span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Evolución Diaria</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-bold shadow-md shadow-primary-container/20"><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all group bg-primary-container text-on-primary font-bold shadow-md shadow-primary-container/20" data-path="inicio" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">dashboard</span><span class="font-label-lg text-label-lg">Inicio</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="mis-habitos" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">check_circle</span><span class="font-label-lg text-label-lg">Mis Hábitos</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="progreso" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">monitoring</span><span class="font-label-lg text-label-lg">Progreso</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="logros" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">military_tech</span><span class="font-label-lg text-label-lg">Logros</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="perfil" href="#"><span class="material-symbols-outlined text-xl transition-transform group-hover:scale-110">manage_accounts</span><span class="font-label-lg text-label-lg">Perfil</span></a></nav></div><div class="flex flex-col gap-3 p-4 bg-surface-container-low rounded-xl"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary"><span class="material-symbols-outlined text-sm font-bold">local_fire_department</span><span class="font-label-sm text-label-sm font-bold">14 DÍAS</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Nivel 7</span></div><div class="flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-bold">Habit Master</span><span class="font-label-sm text-label-sm text-on-surface-variant">86%</span></div><div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden"><div class="h-full rounded-full bg-primary-container" style="width: 86.25%"></div></div><div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mt-0.5"><span>3,450 XP</span><span>4,000 XP</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4"><div class="flex items-center text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"><span class="text-on-surface-variant">HabitUp</span><span class="material-symbols-outlined text-sm mx-1">chevron_right</span><span class="text-primary font-bold">Panel Activo</span></div></div><div class="flex items-center gap-4"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-64 h-9 pl-9 pr-3 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Buscar hábitos, tags, metas..." type="text"/></div><button class="relative p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-95 active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-lg">add</span><span class="hidden md:inline">Nuevo Hábito</span></button><div class="flex items-center gap-2 pl-2"><div class="relative flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUOkeg1TR9-Gw7kAsCQfohpEDWJCT2lDE7OL-2Uk-QNF8T-ZaHIe7hg8RlTW0lx9AQiSv9jCNOvnqCMbqHWBf83HyNEmC01Pb5N5wtxwMoscYp7cPh6SH4TpxtVL6ulrhvo1nTWIwLnvOTauV0JqA8NZsZcALmrd4muLHzexOobEzA3ZzPM4fhUbSNsgfihC3wG75jjvgEfC_RUl5ny6YWr_Kv_FisfxtLK58h3On3Pfpz0r5ek96kBw"/><span class="absolute -bottom-1 -right-1 px-1 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] leading-tight font-extrabold">7</span></div></div></div></header><main class="w-full pt-16 px-8 min-h-screen bg-background"><div class="flex flex-col w-full pb-16">
+<!-- Top Greeting & Momentum Summary -->
+<section class="w-full mb-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+            Lunes, 24 de Octubre
+          </span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sincronizado en tiempo real</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center gap-2">
+          ¡Buenos días, Laura! <span class="inline-block hover:rotate-12 transition-transform duration-300 origin-bottom-right">&Wave</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-1">
+          Hoy tienes <span class="font-semibold text-on-surface">5 hábitos programados</span>. Ya completaste <span class="font-bold text-primary">3</span> (<span class="font-bold text-secondary">60%</span> del día).
+        </p>
+</div>
+<!-- Quick Action Pill Group -->
+<div class="flex items-center gap-2 self-start lg:self-auto">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-base text-primary">tune</span>
+<span>Ajustar Rutinas</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span>Ver Desafío Semanal</span>
+</button>
+</div>
+</div>
+<!-- 4 Key Telemetry Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Card 1: Streak -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-tertiary-fixed/30 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Racha Activa</span>
+<span class="p-2 rounded-lg bg-tertiary-fixed text-tertiary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-display-hero text-display-hero text-on-surface leading-none">14</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">Días</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-tertiary-fixed/40 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs">auto_awesome</span>
+<span>¡Tu mejor racha personal!</span>
+</div>
+</div>
+<!-- Card 2: Level & XP -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary-fixed/40 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Rango de Progresión</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+            +150 XP hoy
+          </span>
+</div>
+<div class="flex items-center gap-1.5 mb-1 text-on-surface">
+<span class="material-symbols-outlined text-xl text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="font-headline-sm text-headline-sm font-extrabold tracking-tight">Nivel 7 • Explorador</h2>
+</div>
+<div class="mt-3">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mb-1.5">
+<span class="font-semibold text-on-surface">3,450 XP</span>
+<span>4,000 XP (Nivel 8)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full bg-primary-container transition-all duration-1000 ease-out" style="width: 86.25%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: Weekly Consistency Rate -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary-fixed/50 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tasa Semanal</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-xl">trending_up</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-display-hero text-display-hero text-on-surface leading-none">86%</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold inline-flex items-center">
+<span class="material-symbols-outlined text-sm">arrow_upward</span> +4% vs semana ant.
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          19 de 22 hábitos completados a tiempo.
+        </p>
+</div>
+<!-- Card 4: Gems & Rewards -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-variant rounded-full blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Bóveda de Gemas</span>
+<span class="p-2 rounded-lg bg-secondary-fixed text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">diamond</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1.5">
+<span class="font-display-hero text-display-hero text-on-surface leading-none">240</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">Gemas</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Canjeables en tienda</span>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline inline-flex items-center gap-0.5" href="#">
+            Canjear <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Asymmetric Workspace (8 Cols Habits Stream : 4 Cols Supporting Telemetry) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Habit Stream (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Today's Habits Header & Filter Tabs -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">checklist</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-extrabold">Hábitos de Hoy</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">3 finalizados • 2 pendientes de registrar</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low self-start sm:self-auto">
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all" type="button">
+            Todos (5)
+          </button>
+<button class="px-3.5 py-1.5 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" type="button">
+            Pendientes (2)
+          </button>
+<button class="px-3.5 py-1.5 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" type="button">
+            Hechos (3)
+          </button>
+</div>
+</div>
+<!-- Pending Habits Section -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+            Pendientes por Realizar
+          </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">+80 XP disponibles</span>
+</div>
+<!-- Pending Habit 1: Leer 20 páginas -->
+<div class="relative bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 group flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start sm:items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Leer 20 páginas de libro</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/60 text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  6d
+                </span>
+</div>
+<div class="flex items-center flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+                  Tarde • 18:00
+                </span>
+<span>•</span>
+<span class="text-primary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">bolt</span> +30 XP
+                </span>
+<span>•</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-low text-on-surface-variant">Desarrollo Mental</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 shrink-0">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 active:scale-95 transition-all" onclick="completeHabit(this, 30)" type="button">
+<span class="material-symbols-outlined text-lg">check</span>
+<span>Completar (+30 XP)</span>
+</button>
+</div>
+</div>
+<!-- Pending Habit 2: Dormir antes de las 11:00 PM -->
+<div class="relative bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 group flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start sm:items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dormir antes de las 11:00 PM</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/60 text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  12d
+                </span>
+</div>
+<div class="flex items-center flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+                  Noche • 22:30
+                </span>
+<span>•</span>
+<span class="text-primary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">bolt</span> +50 XP
+                </span>
+<span>•</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-low text-on-surface-variant">Recuperación</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 shrink-0">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 active:scale-95 transition-all" onclick="completeHabit(this, 50)" type="button">
+<span class="material-symbols-outlined text-lg">check</span>
+<span>Completar (+50 XP)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Completed Habits Section -->
+<div class="flex flex-col gap-3 mt-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Completados Hoy (3 de 5)
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">¡Excelente constancia!</span>
+</div>
+<!-- Completed Habit 1: Agua -->
+<div class="relative bg-surface-container-lowest/80 rounded-xl p-4.5 shadow-sm transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-4">
+<div class="w-11 h-11 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold line-through decoration-secondary/60">Beber 2L de agua</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  18d
+                </span>
+</div>
+<div class="flex items-center flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Completado a las 8:30 AM</span>
+<span>•</span>
+<span class="text-secondary font-bold">+20 XP ganado</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<div class="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+</div>
+</div>
+<!-- Completed Habit 2: Caminata -->
+<div class="relative bg-surface-container-lowest/80 rounded-xl p-4.5 shadow-sm transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-4">
+<div class="w-11 h-11 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold line-through decoration-secondary/60">Caminata matutina 30 min</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  14d
+                </span>
+</div>
+<div class="flex items-center flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Completado a las 7:15 AM</span>
+<span>•</span>
+<span class="text-secondary font-bold">+40 XP ganado</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<div class="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+</div>
+</div>
+<!-- Completed Habit 3: Mindfulness -->
+<div class="relative bg-surface-container-lowest/80 rounded-xl p-4.5 shadow-sm transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-4">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">self_improvement</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold line-through decoration-secondary/60">Meditación mindfulness</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/40 text-tertiary font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                  9d
+                </span>
+</div>
+<div class="flex items-center flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Completado a las 9:00 AM</span>
+<span>•</span>
+<span class="text-secondary font-bold">+25 XP ganado</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<div class="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Habit Flow Visual Storytelling Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-col max-w-md">
+<span class="font-label-sm text-label-sm text-primary font-extrabold uppercase tracking-wider mb-1">
+            Compañera de Rutina
+          </span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">
+            La consistencia matutina acelera un 40% tus hábitos nocturnos
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Completar tus primeros 3 hitos antes de mediodía reduce la fricción cognitiva vespertina. ¡Estás encaminada al 100% de cumplimiento hoy!
+          </p>
+<div class="flex items-center gap-3">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full object-cover shadow-sm" data-alt="Close up portrait photograph of young athletic woman smiling warmly in natural morning ambient sunlight with soft pastel purple background lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKkp0VaDPKum-GlOGybWQaFCgb0JQBh3CE6mq3jverRNDoYTE9xFYNqEfYbzonZ95zj_ZNE4Lc4uj1PiyF4QrgfwQs_t--KtH-VvwzBaoaXHUEszuntvvFR6YnRpGkh4mTEtZ8unMq-5Bx0JAu0NOhzBo1GbO3T-9YcV6XD6JDnMmxKM00OLNax56ejQmdVKQmn8Tf4bEaLmtgNCK-0DFBPslzwV1XfKC2utEoE5sHf2FNBh7mRLJoGQ"/>
+<img class="w-8 h-8 rounded-full object-cover shadow-sm" data-alt="Close up photographic avatar of smiling man in casual apparel with energetic bright composition and soft blue gradient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXHvujB2UV4DdmLM39PZrbLoea3hxNfJNoZ9zHEgcClK1zLOCcTnGdC_-gsCsrLgmMvm-AFjnj0TGVdbiuvaChku8Hr3xvp19YWLgqbzelYf6VTa1hVGzgEKhmirrzl37lrAnCfWJBrkPOkeqTqPOLPiNpJpy1KTux8fCY_g7DwSIkAPeZlbR891-pu4apeyr_NXbTT38QhzhttWtV-SjuwipaaSwVeILRO8q17MyqCcOFDE7ydRpXQg"/>
+<img class="w-8 h-8 rounded-full object-cover shadow-sm" data-alt="Portrait photography of young female student wearing headphones, confident and focused expression with morning warm glow lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7dVXVqr_YZ1qktf39cMKNH-rJTNN14qgVGJv5iRDCUweNNV0-QvBmFUCyG5kEdsEcVRweiGGm2Z_zGDnWdaaZSOsWSnybXUz0oS3W1Po_WmhIQrcEYYB-nP_g84nxFzk4FiWE162wqVi8Ee4hnVEM9B_p8IleLVz8xC5v8zQWJvPr5UT4JOwlh58uDsyxXrRfcmtvU8z6tem16P-0AvmvLZ9f-U1Oy4YIa5B42aBG8QJMDieGhoZ9sw"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Laura y 1,420 usuarios completaron su meta matutina</span>
+</div>
+</div>
+<div class="w-full md:w-56 h-40 rounded-xl overflow-hidden shadow-sm relative shrink-0">
+<img class="w-full h-full object-cover" data-alt="Aesthetic workspace scene showcasing a warm ceramic coffee cup, an open daily journal with handwritten checkmarks, and green leafy houseplant illuminated by morning sunshine in modern minimal Scandinavian studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMuZj72AEPRUBnzgHeHbyK0wTbPjVEXmA_oIzANiPGjmxxuIOe2ul2twDxLy5SN1-Hn3c0Ab5Tjr39ph8hQGtdWsg9UD1Yft4e8yBhTLViDTwitirWJ7Hok8mbmyLcIbtXZNcVQBYPoOreO99zE9ypJoHrlELzZjdEWRcZzOwohpK5l4FoMHBDn0922x7f-HgXxXY6A1oteERPgFe6BgFeSZUkKeJRSsqWmCpYhysg4MLCcSrJfPx4NQ"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm font-bold">
+            Ritmo Óptimo
+          </span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Supporting Telemetry & Gamification Widgets (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Weekly Rhythm Calendar Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Semana Actual</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">86% global</span>
+</div>
+<!-- 7 Days Grid -->
+<div class="grid grid-cols-7 gap-2 text-center mb-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant">L</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">X</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">J</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">V</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">D</span>
+<!-- Lun (Today, in progress 60%) -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shadow-md shadow-primary/20 ring-2 ring-primary/40 ring-offset-2 ring-offset-surface-container-lowest">
+              24
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<!-- Mar -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              25
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</div>
+<!-- Mie -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              26
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</div>
+<!-- Jue -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              27
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</div>
+<!-- Vie -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              28
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</div>
+<!-- Sab -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              29
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</div>
+<!-- Dom -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface-variant flex items-center justify-center font-label-md text-label-md">
+              30
+            </div>
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</div>
+</div>
+<!-- Weekly mini breakdown stats -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Promedio de puntualidad</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">94.2%</span>
+</div>
+</div>
+<!-- Recent Achievements Unlocked Card -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-xl" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Logros Recientes</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline" href="#">Ver todos (18)</a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Achievement 1 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Guerrero Matutino</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold shrink-0">+100 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                Completar hábitos antes de 8:00 AM durante 7 días seguidos.
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 mt-1">Desbloqueado hace 2 días</span>
+</div>
+</div>
+<!-- Achievement 2 -->
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Hidratación Nivel Máximo</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold shrink-0">+75 XP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+                Meta de hidratación ininterrumpida por más de 15 días.
+              </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 mt-1">Desbloqueado ayer</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Stylized Daily Motivation Card (Soft Violet Tone) -->
+<div class="relative overflow-hidden rounded-xl bg-primary-fixed p-6 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3 text-on-primary-fixed-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">format_quote</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Sabiduría Diaria</span>
+</div>
+<span class="material-symbols-outlined text-base">psychology</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-primary-fixed font-bold leading-snug mb-3">
+          “No nos elevamos al nivel de nuestras metas; caemos al nivel de nuestros sistemas.”
+        </p>
+<div class="flex items-center justify-between text-on-primary-fixed-variant font-label-sm text-label-sm">
+<span class="font-semibold">— James Clear, Hábitos Atómicos</span>
+<button class="p-1 rounded-full hover:bg-surface-container-lowest/20 transition-colors" title="Compartir pensamiento" type="button">
+<span class="material-symbols-outlined text-base">share</span>
+</button>
+</div>
+</div>
+<!-- Mini Gamification Challenge Promo -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-xl">casino</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Reto Relámpago</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Completa la lectura y gana +20 gemas extra</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Inline Vanilla Script for Micro-interactions -->
+<script>
+    function completeHabit(btn, xpReward) {
+      const card = btn.closest('.group');
+      if (!card) return;
+
+      // Animate button feedback
+      btn.innerHTML = `<span class="material-symbols-outlined text-lg">check_circle</span> <span>¡Completado!</span>`;
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      btn.classList.add('bg-secondary', 'text-on-secondary');
+
+      // Visual success strike
+      const title = card.querySelector('h3, span.font-headline-sm');
+      if (title) {
+        title.classList.add('line-through', 'opacity-70');
+      }
+
+      // Pop toast notification
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl transition-all duration-300 transform translate-y-4 opacity-0';
+      toast.innerHTML = `
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">stars</span>
+        <div class="flex flex-col">
+          <span class="font-label-lg text-label-lg font-bold">¡Hábito Registrado!</span>
+          <span class="font-body-sm text-body-sm">+` + xpReward + ` XP y +1 día sumado a tu racha</span>
+        </div>
+      `;
+      document.body.appendChild(toast);
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-4', 'opacity-0');
+        setTimeout(() => toast.remove(), 400);
+      }, 3000);
+    }
+  </script>
+</div></main></div></body></html>
