@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
-    "start": "node server/src/index.js",
+    "start": "node --max-old-space-size=384 server/src/index.js",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
     "start:server": "npm start --prefix server",

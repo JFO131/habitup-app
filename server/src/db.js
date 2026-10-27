@@ -1,4 +1,4 @@
-import { PGlite } from '@electric-sql/pglite';
+import dotenv from 'dotenv';
 import pg from 'pg';
 import bcrypt from 'bcryptjs';
 import path from 'path';
@@ -8,22 +8,36 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Load .env from current directory or server directory
+dotenv.config();
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
+
 let dbClient = null;
 
 export async function getDb() {
   if (dbClient) return dbClient;
 
   if (process.env.DATABASE_URL) {
+    console.log('Conectando a base de datos PostgreSQL remota...');
     const isLocal = process.env.DATABASE_URL.includes('localhost') || process.env.DATABASE_URL.includes('127.0.0.1');
     const pool = new pg.Pool({ 
       connectionString: process.env.DATABASE_URL,
-      ssl: isLocal ? false : { rejectUnauthorized: false }
+      ssl: isLocal ? false : { rejectUnauthorized: false },
+      max: 5,
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 10000
     });
     dbClient = {
       exec: async (sql) => pool.query(sql),
       query: (sql, params = []) => pool.query(sql, params)
     };
   } else {
+    if (process.env.RENDER || process.env.NODE_ENV === 'production') {
+      console.warn('⚠️ ATENCIÓN: DATABASE_URL no está configurada en las Variables de Entorno de Render.');
+      console.warn('⚠️ Por favor agrega DATABASE_URL en Render > Environment para conectar tu PostgreSQL.');
+    }
+    console.log('Iniciando PostgreSQL local (PGlite)...');
+    const { PGlite } = await import('@electric-sql/pglite');
     const dataDir = path.join(__dirname, '..', 'data', 'postgres');
     fs.mkdirSync(dataDir, { recursive: true });
     const pglite = new PGlite(dataDir);

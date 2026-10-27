@@ -9,6 +9,8 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=384"
       - key: DATABASE_URL
         value: postgresql://habitup_db_user:oOeHgS5zHmswCDm2thsdrRANeP5qjycJ@dpg-dbgd6j8u01pc738liep0-a.virginia-postgres.render.com/habitup_db
       - key: JWT_SECRET
