@@ -14,8 +14,13 @@ export async function getDb() {
   if (dbClient) return dbClient;
 
   if (process.env.DATABASE_URL) {
-    const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL });
+    const isLocal = process.env.DATABASE_URL.includes('localhost') || process.env.DATABASE_URL.includes('127.0.0.1');
+    const pool = new pg.Pool({ 
+      connectionString: process.env.DATABASE_URL,
+      ssl: isLocal ? false : { rejectUnauthorized: false }
+    });
     dbClient = {
+      exec: async (sql) => pool.query(sql),
       query: (sql, params = []) => pool.query(sql, params)
     };
   } else {
